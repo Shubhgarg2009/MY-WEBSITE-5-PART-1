@@ -1,0 +1,1015 @@
+/***** VARIABLES *****/
+/* Dark grey */
+/* Dark #556E80 */
+/* Light #556E80 */
+/* Light grey */
+/* Medium grey */
+/***** BASE *****/
+@import url("https://fonts.googleapis.com/css?family=Lato:300,700,900");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 300 1.25em "Lato", sans-serf;
+  color: #333333;
+}
+body h1 {
+  color: #556E80;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2.3;
+}
+body h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+body p {
+  font-size: 14px;
+  font-weight: 100;
+  padding: 2vw 0;
+}
+body a {
+  font-size: 14px;
+}
+body .boton {
+  background: none;
+  color: #333333;
+  padding: 1vw 2vw;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 0.3vw solid #556E80;
+  text-decoration: none;
+}
+body .boton:hover {
+  background: #556E80;
+  color: white;
+  transition: 0.6s ease;
+}
+body .quote {
+  font-size: 16px;
+  color: #333333;
+}
+body .qboton {
+  margin-top: 3vw;
+  background: none;
+  color: #333333;
+  padding: 0.5vw 1vw;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 0.3vw solid #556E80;
+}
+body .qboton:hover {
+  background: #556E80;
+  color: white;
+  transition: 0.6s ease;
+}
+
+/* COLUMNS */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*=col-] {
+  float: left;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*=col-] {
+  width: 100%;
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+  .col-t-1 {
+    width: 6.25%;
+  }
+
+  .col-t-2 {
+    width: 12.5%;
+  }
+
+  .col-t-3 {
+    width: 18.75%;
+  }
+
+  .col-t-4 {
+    width: 25%;
+  }
+
+  .col-t-5 {
+    width: 31.25%;
+  }
+
+  .col-t-6 {
+    width: 37.5%;
+  }
+
+  .col-t-7 {
+    width: 43.75%;
+  }
+
+  .col-t-8 {
+    width: 50%;
+  }
+
+  .col-t-9 {
+    width: 56.25%;
+  }
+
+  .col-t-10 {
+    width: 62.5%;
+  }
+
+  .col-t-11 {
+    width: 68.75%;
+  }
+
+  .col-t-12 {
+    width: 75%;
+  }
+
+  .col-t-13 {
+    width: 81.25%;
+  }
+
+  .col-t-14 {
+    width: 87.5%;
+  }
+
+  .col-t-15 {
+    width: 93.75%;
+  }
+
+  .col-t-16 {
+    width: 100%;
+  }
+
+  body h1 {
+    font-size: 2vw;
+  }
+
+  body h2 {
+    font-size: 4.7vw;
+  }
+
+  body p, body a, body .boton, body .sec02 .text-right ul li {
+    font-size: 2.4vw;
+  }
+
+  body .sec04 .flip-cards li {
+    height: 25vw;
+  }
+
+  body .sec04 .icon {
+    width: 50%;
+  }
+
+  body .footer .quote {
+    font-size: 2.2vw;
+  }
+}
+/* For desktop: */
+@media only screen and (min-width: 870px) {
+  .col-1 {
+    width: 6.25%;
+  }
+
+  .col-2 {
+    width: 12.5%;
+  }
+
+  .col-3 {
+    width: 18.75%;
+  }
+
+  .col-4 {
+    width: 25%;
+  }
+
+  .col-5 {
+    width: 31.25%;
+  }
+
+  .col-6 {
+    width: 37.5%;
+  }
+
+  .col-7 {
+    width: 43.75%;
+  }
+
+  .col-8 {
+    width: 50%;
+  }
+
+  .col-9 {
+    width: 56.25%;
+  }
+
+  .col-10 {
+    width: 62.5%;
+  }
+
+  .col-11 {
+    width: 68.75%;
+  }
+
+  .col-12 {
+    width: 75%;
+  }
+
+  .col-13 {
+    width: 81.25%;
+  }
+
+  .col-14 {
+    width: 87.5%;
+  }
+
+  .col-15 {
+    width: 93.75%;
+  }
+
+  .col-16 {
+    width: 100%;
+  }
+
+  .col-tres {
+    width: 33.33%;
+  }
+
+  body p, body a, body .boton, body .sec02 .box .text-right ul li {
+    font-size: 18px;
+  }
+
+  body .footer .quote {
+    font-size: 1.6vw;
+  }
+
+  body .footer a {
+    font-size: 1.6vw;
+  }
+}
+/*********************************/
+/***** HEADER *****/
+/*********************************/
+/***** LAYOUT *****/
+#header {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 3px 2px 0px rgba(50, 50, 50, 0.2);
+}
+
+#header-content {
+  width: 100%;
+}
+
+#header-logo {
+  padding: 1em;
+  background: #F3F3F3;
+}
+
+#header-nav {
+  padding: 1em;
+  background: #333333;
+}
+
+#header-nav-toggle {
+  color: #333333;
+  font-size: 11vw;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  z-index: 1;
+  cursor: pointer;
+  display: inline;
+}
+
+/***** MODULES *****/
+/* Measure */
+.measure {
+  width: 98%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+  color: #08532A;
+  font-weight: 700;
+  margin: 0;
+}
+
+.image-logo {
+  width: 260px;
+  max-width: 90%;
+  padding: 0 2% 0 0;
+}
+
+/* Nav */
+.nav {
+  list-style: none;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+.nav li {
+  width: 100%;
+  margin: 0 0 1em 0;
+  display: block;
+  background: none;
+}
+.nav li:last-child {
+  margin: 0;
+  cursor: pointer;
+}
+.nav li a {
+  color: #F3F3F3;
+  text-decoration: none;
+  background: none;
+}
+.nav li img {
+  width: 30px;
+}
+
+#LanBtn {
+  height: 20px;
+  background-image: url("http://sahaja-yoga.co/images/Language.png");
+  background-repeat: no-repeat;
+}
+
+/***** MODIFIERS *****/
+.is-hidden {
+  display: none;
+}
+
+.is-visible {
+  display: block;
+}
+
+/***** MEDIA QUERIES *****/
+@media screen and (min-width: 350px) {
+  #header-nav-toggle {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 600px) {
+  #header-nav-toggle {
+    display: inline;
+  }
+
+  .image-logo {
+    padding: 0;
+    max-width: 370px;
+  }
+
+  .nav li img {
+    width: 1.5em;
+  }
+}
+@media screen and (min-width: 870px) {
+  /* Header */
+  #header {
+    padding: 1em 0em 0em 0em;
+    background: #F3F3F3;
+  }
+
+  #header-content {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 0 1em 0;
+  }
+
+  #header-logo {
+    padding: 0;
+    background: none;
+    float: left;
+  }
+
+  #header-nav {
+    padding: 0.5em;
+    background: none;
+    float: right;
+    display: block;
+  }
+
+  #header-nav-toggle {
+    display: none;
+  }
+
+  .image-logo {
+    padding: 0 0 0 3vw;
+    width: 30vw;
+  }
+
+  /* Nav */
+  .nav li {
+    width: auto;
+    margin: 0 1vw;
+    display: inline-block;
+  }
+  .nav li:hover {
+    padding: 0 0 0.15em 0;
+    border-bottom: 0.15em solid #556E80;
+  }
+  .nav li:nth-child(1) {
+    padding: 0 0 0.15em 0;
+    border-bottom: 0.15em solid #556E80;
+  }
+  .nav li a {
+    color: #08532A;
+  }
+  .nav li img {
+    width: 50%;
+    filter: drop-shadow(1px 1px 2px #333333);
+  }
+
+  #LanBtn {
+    width: 20px;
+    background-image: url("http://sahaja-yoga.co/images/Language2.png");
+  }
+}
+/* The Modal (background) */
+.LanModal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  padding-top: 90px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.LanModalContent {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px 25px 10px 0;
+  width: 80%;
+}
+.LanModalContent .LanCountry {
+  position: relative;
+  overflow: auto;
+  list-style-type: none;
+}
+.LanModalContent .LanCountry a {
+  text-decoration: none;
+  color: #333333;
+}
+.LanModalContent .LanCountry a img {
+  position: absolute;
+  width: 30px;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+.LanModalContent .LanCountry a .LanBox {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  left: 60px;
+}
+.LanModalContent .LanCountry a .LanP {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*********************************/
+/***** END HEADER *****/
+/*********************************/
+/*********************************/
+/***** SEC00 BANNER *****/
+/*********************************/
+.sec00 {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  overflow: auto;
+}
+
+/*********************************/
+/***** END SEC00 BANNER *****/
+/*********************************/
+/*********************************/
+/***** SEC01 IMAGE SLIDER *****/
+/*********************************/
+.sec01 {
+  position: relative;
+  width: 100%;
+  overflow: none;
+ /* Caption text */
+}
+.sec01 .slider {
+  width: 100%;
+}
+.sec01 .slide_viewer {
+  margin: auto;
+  position: relative;
+}
+.sec01 .slide_group {
+  position: relative;
+  width: 100%;
+}
+.sec01 .slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+.sec01 .slide:first-child {
+  display: block;
+}
+.sec01 img {
+  vertical-align: middle;
+  width: 100%;
+}
+.sec01 .text {
+  position: absolute;
+  top: 3vw;
+  right: 6vw;
+  width: 40%;
+  z-index: 2;
+}
+.sec01 .text h1 {
+  color: #556E80;
+  text-transform: uppercase;
+  font-size: 2vw;
+  font-weight: 700;
+  line-height: 2.3;
+}
+.sec01 .text h2 {
+  text-transform: uppercase;
+  font-size: 4.7vw;
+  font-weight: 900;
+}
+.sec01 .text p {
+  font-size: 2.8vw;
+  font-weight: 100;
+  padding: 2vw 0 6vw 0;
+}
+.sec01 .directional_nav {
+  height: 50vw;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+}
+.sec01 .previous_btn {
+  bottom: 0;
+  left: 20px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+.sec01 .next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+.sec01 .previous_btn, .sec01 .next_btn {
+  cursor: pointer;
+  height: 5vw;
+  width: 5vw;
+  min-width: 40px;
+  min-height: 40px;
+  opacity: 0.5;
+  z-index: 10;
+  transition: opacity 0.4s ease-in-out;
+}
+.sec01 .previous_btn:hover, .sec01 .next_btn:hover {
+  opacity: 1;
+}
+.sec01 .slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+.sec01 a.slide_btn {
+  color: #7D807F;
+  font-size: 50px;
+  margin: 0;
+  transition: all 0.4s ease-in-out;
+}
+.sec01 .slide_btn.active, .sec01 .slide_btn:hover {
+  color: #556E80;
+  cursor: pointer;
+}
+
+/*********************************/
+/***** END SEC01 IMAGE SLIDER *****/
+/*********************************/
+/*********************************/
+/***** SEC 02 ABOUT US*****/
+/*********************************/
+.sec02 {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+}
+.sec02 .text-left {
+  top: 3vw;
+  padding: 6vw 6vw 5vw;
+}
+.sec02 .text-left p {
+  padding-bottom: 3vw;
+}
+.sec02 img {
+  padding: 0;
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .sec02 img {
+    display: block;
+  }
+}
+/*********************************/
+/***** END SEC 02 ABOUT US*****/
+/*********************************/
+/*********************************/
+/***** SEC 03 OUR PHYLOSOPHY *****/
+/*********************************/
+.sec03 {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  display: table;
+  margin-bottom: 6vh;
+}
+.sec03 img {
+  width: 100%;
+}
+.sec03 .box {
+  position: absolute;
+  overflow: auto;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0.85;
+}
+.sec03 .text-right {
+  float: left;
+  position: absolute;
+  top: 3vw;
+  padding: 0 6vw;
+  width: 100%;
+}
+.sec03 .text-right p {
+  padding: 2vw 0 0;
+}
+.sec03 .text-right ul {
+  padding: 1vw 0 1vw 2.5vw;
+}
+.sec03 .text-right ul li {
+  font-weight: 100;
+  font-size: 14px;
+  list-style-type: circle;
+  padding: 0;
+  font-size: 14px;
+}
+.sec03 .boton {
+  margin-top: 4vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .sec03 .box {
+    width: 50%;
+  }
+}
+/*********************************/
+/***** END SEC 03 OUR PHYLOSOPHY *****/
+/*********************************/
+/*********************************/
+/*****  SEC 04 OUR FOUNDER *****/
+/*********************************/
+.sec04 {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+}
+.sec04 .text-left {
+  top: 3vw;
+  padding: 6vw 6vw 5vw;
+}
+.sec04 .text-left p {
+  margin-bottom: 2vw;
+}
+.sec04 .sec03 img {
+  padding: 0;
+}
+
+/*********************************/
+/***** END SEC 04 OUR FOUNDER *****/
+/*********************************/
+/*********************************/
+/***** SEC 05 OUR COURSES *****/
+/*********************************/
+.sec05 {
+  position: relative;
+  width: 100%;
+  overflow: none;
+  background: url(https://sahaja-yoga.co/images/Courses/Bamboo.jpg) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  /* Button Card Colors */
+  /* First button color */
+  /* Second button color */
+  /* Third button color */
+  /* Fourth button color */
+  /* Fifth button color */
+  /* Sixth (last) button color */
+}
+.sec05 .tittle {
+  top: 3vw;
+  padding-left: 6vw;
+  width: 100%;
+  margin: 3vw 0;
+}
+.sec05 .courses {
+  padding: 0 6vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3vw;
+}
+.sec05 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.sec05 h1 {
+  color: white;
+}
+.sec05 h3 {
+  color: white;
+  padding-top: 1vw;
+  text-align: center;
+}
+.sec05 p {
+  padding: 1vw;
+}
+.sec05 .icon {
+  position: absolute;
+  width: 30%;
+  left: 50%;
+  /* IE 9 */
+  /* Safari */
+  transform: translate(-50%, 0);
+}
+.sec05 .icon-2 {
+  margin: 1vw;
+  width: 20%;
+}
+.sec05 .rectangulo {
+  width: 100%;
+  height: 7.8vw;
+}
+.sec05 .flip-cards {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.sec05 .flip-cards li {
+  float: left;
+  height: 180px;
+  position: relative;
+  padding: 0;
+}
+.sec05 .flip-cards a {
+  text-decoration: none;
+}
+.sec05 .flip-cards li:hover .card-front {
+  transform: rotateY(180deg);
+  transform: perspective(1000) rotateY(180deg);
+}
+.sec05 .flip-cards li:hover .card-back {
+  z-index: 950;
+  transform: rotateY(0deg);
+  transform: perspective(1000) rotateY(0deg);
+}
+.sec05 .flip-cards .card-front, .sec05 .flip-cards .card-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.sec05 .flip-cards .card-front {
+  transform: perspective(1000) rotateY(0);
+  z-index: 900;
+}
+.sec05 .flip-cards .card-back {
+  transform: rotateY(-180deg);
+  z-index: 800;
+}
+.sec05 .flip-cards .panel {
+  border: none;
+}
+.sec05 .flip-cards .panel i, .sec05 .flip-cards .panel p, .sec05 .flip-cards .panel a {
+  color: white;
+}
+.sec05 .flip-cards li:first-child > .button {
+  background-color: rgba(231, 161, 61, 0.8);
+}
+.sec05 .flip-cards li:first-child > .panel {
+  background-color: #e7a13d;
+}
+.sec05 .flip-cards li:nth-child(2) > .button {
+  background-color: rgba(93, 150, 72, 0.8);
+}
+.sec05 .flip-cards li:nth-child(2) > .panel {
+  background-color: #5d9648;
+}
+.sec05 .flip-cards li:nth-child(3) > .button {
+  background-color: rgba(188, 45, 48, 0.8);
+}
+.sec05 .flip-cards li:nth-child(3) > .panel {
+  background-color: #bc2d30;
+}
+.sec05 .flip-cards li:nth-child(4) > .button {
+  background-color: rgba(46, 87, 140, 0.8);
+}
+.sec05 .flip-cards li:nth-child(4) > .panel {
+  background-color: #2e578c;
+}
+.sec05 .flip-cards li:nth-child(5) > .button {
+  background-color: rgba(125, 128, 127, 0.8);
+}
+.sec05 .flip-cards li:nth-child(5) > .panel {
+  background-color: #7d807f;
+}
+.sec05 .flip-cards li:last-child > .button {
+  background-color: rgba(100, 66, 87, 0.8);
+}
+.sec05 .flip-cards li:last-child > .panel {
+  background-color: #644257;
+  color: white;
+}
+
+/*********************************/
+/***** END SEC 05 OUR COURSES *****/
+/*********************************/
+/*********************************/
+/***** SEC 06 EXPERIENCES *****/
+/*********************************/
+.sec06 {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  /***** TEXT SLIDER *****/
+}
+.sec06 img {
+  padding: 0;
+  float: left;
+}
+.sec06 .text-right {
+  padding: 3vw 6vw;
+  top: 3vw;
+}
+.sec06 a {
+  position: relative;
+}
+.sec06 .TextSlider {
+  margin: 0 0 3vw;
+  position: relative;
+  z-index: -2;
+}
+.sec06 .tslide_viewer {
+  margin: auto;
+  position: relative;
+}
+.sec06 .tslide_group {
+  position: relative;
+  width: 100%;
+}
+.sec06 .tslide {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+.sec06 .tslide:first-child {
+  display: block;
+}
+.sec06 .autor {
+  text-align: right;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 2vw;
+}
+
+/*********************************/
+/***** END SEC 06 EXPERIENCES *****/
+/*********************************/
+/*********************************/
+/***** SEC 07 CONTACT US *****/
+/*********************************/
+.sec07 {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+}
+.sec07 .text-left {
+  padding: 3vw 6vw;
+}
+.sec07 .boton {
+  margin-top: 3vw;
+}
+.sec07 .map {
+  padding: 0;
+}
+
+/*********************************/
+/***** END SEC 07 CONTACT US *****/
+/*********************************/
+/*********************************/
+/***** FOOTER *****/
+/*********************************/
+.footer {
+  position: relative;
+  background: grey;
+  width: 100%;
+  overflow: auto;
+  padding-top: 4vw;
+}
+.footer .cell-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .cell-container .cell {
+  display: inline-block;
+  padding: 2vw;
+}
+.footer .cell-container .cell h3 {
+  margin-bottom: 1vw;
+}
+.footer .cell-container .cell a {
+  text-decoration: none;
+  color: #333333;
+}
+.footer .cell-container .cell a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.footer .cell-container .cell img {
+  margin-left: 1vw;
+}
+.footer .quote {
+  font-size: 16px;
+  height: auto;
+}
+.footer .author {
+  font-style: italic;
+  float: right;
+  padding-right: 1vw;
+  font-weight: 300;
+}
+.footer #end {
+  text-align: center;
+  padding: 20px 0 10px;
+  font-size: 0.6em;
+}
+
+/*********************************/
+/***** END FOOTER *****/
+/*********************************/
+html,body{
+    color: #333333;
+}
